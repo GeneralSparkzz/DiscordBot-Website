@@ -1,0 +1,158 @@
+
+
+section {
+    overflow: hidden;
+}
+body, section{
+    color: rgb(255,255,255);
+    background-color: rgb(50,50,50);
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    color: rgb(255,255,255);
+}
+
+.title-divider{
+    border-width: 0.25em;
+    border-color: mediumpurple;
+    border-style: solid;
+    max-width: 10em;
+}
+
+.max-height-navbar-offset{
+    margin-top: 5vh;
+    height: 95vh;
+}
+.max-height {
+    height: 100vh;
+}
+.title-centered{
+    padding: 1em;
+    padding-bottom: 0.25em;
+    text-align: center;
+    
+}
+.text-centered {
+    text-align: center;
+}
+.profile-img {
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29.5vh;
+    width: 20vh;
+}
+@media only screen and (min-device-width: 1224px) {
+    .section-padding {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+@media only screen and (max-device-width: 1223px) {
+    .section-padding {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+#section-head {
+    background-image: url("/res/img/space-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#section-about {
+    background-color: rebeccapurple;
+}
+#section-projects{
+}
+.container-fluid{
+    padding: 0;
+}
+.row{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.project-img{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: auto;
+}
+.project-img img{
+    flex-shrink: 0;
+    min-width: 100%;
+}
+.project-img:hover .overlay{
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    transition: 1s ease;
+    background: rgba(72, 0, 255, 0.5);
+    left: 0em;
+    right: 0em;
+    top: 0em;
+    bottom: 0em;
+    opacity: 0;
+}
+    .overlay h3 {
+        text-align: center;
+        position: relative;
+        margin: 0;
+        padding: 1em;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+#section-contact {
+    background-color: rebeccapurple;
+}
+
+#return-top{
+    background-color: rgba(72, 0, 255, 0.5);
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 1em;
+}
+    #return-top:hover {
+        background-color: rgba(72, 0, 255, 0.75);
+    }
+
+
+@media only screen and (min-device-width: 1224px) {
+    .project-wrap-text-padding {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
+@media only screen and (max-device-width: 1223px) {
+    .project-wrap-text-padding {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+
+#section-selected-project {
+    background-image: url("/res/img/project-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
